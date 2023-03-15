@@ -2,17 +2,7 @@ name: woekflow-deployment
 
 on:
   workflow_dispatch:
-     inputs : 
-      region :
-        description: "Enter your region : "
-        required: true  
-        type: string    
-
-env:
-  BUCKET: github123
-  TFSTATE_FILE: S3.tfstate
-  aws_region: ${{ github.event.inputs.region }}
-
+     
 jobs:
   s3bucket :
       runs-on : ubuntu-latest
