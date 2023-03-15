@@ -17,7 +17,7 @@ jobs:
             aws-access-key-id: ${{ secrets.AWSACCESSKEYID }}
             aws-secret-access-key: ${{ secrets.AWSSECRETACCESSKEY }}
             aws-session-token: ${{ secrets.AWSSESSIONTOKEN }}
-            aws-region: ${{ env.aws_region }}
+            
 
         - name: terraform init
           run: |
